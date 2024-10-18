@@ -1,3 +1,11 @@
+const fs = require('fs');
+module.exports = { 
+  const pretty = function prettyBoard() };
+  const fileName = './puzzles.txt'
+ fs.readFileSync(fileName)
+
+
+
 function read() {
   /**
    * Прочесть файл puzzles.txt в кодировке 'utf-8' и вернуть эти данные из функции
@@ -25,3 +33,5 @@ function prettyBoard() {
    * Подумай, как симпатичнее его вывести.
    */
 }
+
+
