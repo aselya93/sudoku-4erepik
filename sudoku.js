@@ -2,7 +2,8 @@ const fs = require('fs');
 module.exports = { 
   const pretty = function prettyBoard() };
   const fileName = './puzzles.txt'
- fs.readFileSync(fileName)
+ 
+  fs.readFileSync(fileName)
 
 
 
