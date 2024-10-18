@@ -1,9 +1,4 @@
 const fs = require('fs');
-module.exports = { 
-  const pretty = function prettyBoard() };
-  const fileName = './puzzles.txt'
- 
-  fs.readFileSync(fileName)
 
 
 
@@ -95,15 +90,53 @@ function read() {
     
 
 }
-console.log(read());
 
-// .map((el)=>[el]).map((el)=>el.map((el)=>el.split('')))
-function solve() {
-  /**
-   * Принимает игровое поле в том формате, в котором его вернули из функции read.
-   * Возвращает игровое поле после попытки его решить.
-   */
+function solve(arr) {
+
+const newArr = [1,2,3,4,5,6,7,8,9]
+
+  // переделка массива
+  for (let i = 0; i < arr.length; i++) {
+    const arri = arr[i]
+    for (let j = 0; j < arr.length; j++) {
+  
+      if (arri[j]==='-')
+      {
+        arri[j]=0
+      }
+      else if(typeof(arri[j]==='string'))
+      {
+        arri[j]=Number(arri[j])
+      
+      }
+    }
+  }
+  
+  for (let i = 0; i < arr.length; i++) {
+    const arri = arr[i]
+    
+          
+    for (let j = 0; j < arr.length; j++) {
+        if(arri[j]===0){
+          const newArrNew = newArr.filter(e=>arri.findIndex(i=>i == e) === -1);
+          if(newArrNew.length>0){
+
+            arri[j]= Math.floor(Math.random()*newArrNew.length);
+          }
+       
+          
+          
+          
+          }
+         
+        }
+    }
+  
+  
+  
+  return arr
 }
+console.log(solve(read()))
 
 function isSolved() {
   /**
