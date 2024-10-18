@@ -1,4 +1,10 @@
 const fs = require('fs');
+module.exports = { 
+  const pretty = function prettyBoard() };
+  const fileName = './puzzles.txt'
+ 
+  fs.readFileSync(fileName)
+
 
 
 function read() {
@@ -113,3 +119,5 @@ function prettyBoard() {
    * Подумай, как симпатичнее его вывести.
    */
 }
+
+
