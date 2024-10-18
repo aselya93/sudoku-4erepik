@@ -3,9 +3,13 @@
 /* eslint-disable prefer-const */
 const fs = require('fs');
 const chalk = require('chalk');
+const figlet = require("figlet");
+
 try {
   
-
+  console.log(
+    figlet.textSync("4eripick    sudoku    game")
+  );
 
 function read() {
   if (process.argv[2] == 0 || !process.argv[2]) {
